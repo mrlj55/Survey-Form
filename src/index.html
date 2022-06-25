@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+<h1 id="title" class="text-center">Pet Adoption Survey Form</h1> 
+ 
+     <p id="description" class="description text-center">
+      Thank you for your valuable time.
+    </p>
+    <!-- Create Form -->
+    <form id="survey-form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="name-label">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="email-label">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="number-label">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   name="age"
+                   id="number"
+                    min="10"
+                    max="99"
+                   placeholder="Enter your age" />
+        </div>
+      
+      <div class="form-control">
+            <label name="role" id="dropdown" class="form-control">
+                Which pet would you like to adopt?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+              <option disabled selected value>Select</option> 
+              <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="bunny">
+                    Bunny
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Would you recommend a pet for a friend?
+               
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommend-1">
+                <input type="radio"
+                       id="recommend-1"
+                       name="recommend">Yes</input>
+            </label>
+            <label for="recommend-2">
+                <input type="radio"
+                       id="recommend-2"
+                       name="recommend">No</input>
+            </label>
+            <label for="recommend-3">
+                <input type="radio"
+                       id="recommend-3"
+                       name="recommend">Maybe</input>
+            </label>
+        </div>
+<!--new form -->
+
+ <div class="form-control">
+      <p>
+        What is your favorite animal?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="bunny">Bunny</option>
+        <option value="elephant">Elephant</option>
+        <option
+                value="other">Other</option>                
+      </select>
+    </div>
+  
+        <div class="form-control">
+            <label>Qualities that makes you a pet lover
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Kind</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Love </input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Care</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Friendly</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Patience</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Loyality</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Emotional</input></label>
+            <label for="inp-7">
+                
+              
+  
+        
+             <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions?
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
